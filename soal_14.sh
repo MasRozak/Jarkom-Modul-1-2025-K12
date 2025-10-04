@@ -1,5 +1,7 @@
-#!/bin/sh
-wget \
-"http://drive.usercontent.google.com/u/0/uc?id=1L2XZj5PoQkGSCkeZ5oSplTUgiIgvSRi_&export=download" \
---no-check-certificate -O shortbf.zip
-unzip shortbf.zip
+#!/bin/bash
+source ./function.sh
+
+download 1L2XZj5PoQkGSCkeZ5oSplTUgiIgvSRi_ shortbf.zip
+
+PCAP_FILE="shortbf.pcapng"
+
